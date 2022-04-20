@@ -45,14 +45,25 @@ function combineArray(array1, array2) {
 // function details(){
 //     return details;
 //     }
-     let details=[{name:'riyas',mark:40},
+    /* let details=[{name:'riyas',mark:40},
              {name:'barath',mark:50},
              {name:'krithiga',mark:100}
            ]
     let findPersonDetail=details.find((item)=>{
     return item.name==='riyas'
     })    
-    console.log(findPersonDetail)
+    console.log(findPersonDetail)*/
+    function numbers(arr,element){
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]===element){
+                return true;
+            }
+
+        }
+        return false;   
+    }
+    arr=[34,1,23,5,6,8]
+    console.log(numbers(arr,6))
     // ***********************************7.filter *********************************************
     let candidates=[{name:'mohmmed',age:20},
  {name:'riyas',age:23},
