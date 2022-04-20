@@ -6,24 +6,30 @@ let array = [1, 2, 3, 4, 5, 6]
  let   sum = 0
  let   product = 1
  let i;
-for (i = 0; i < array.length; i += 1) 
+for (i = 0; i < array.length; i=i+ 1) 
    {
-    sum += array[i];
-    product *= array[i];
+    sum =sum+ array[i];
+    product=product* array[i];
     }
 console.log('Sum : '+sum + ' Product :  ' +product); 
 // ***************************2.duplicate values*************************
 let dupArray = [1, 2, 3, 2, 4,3, 5, 5, 6];
-const set = new Set(dupArray);
-const duplicates = dupArray.filter(item => {
-    if (set.has(item)) {
-        set.delete(item);
-    } else {
-        return item;
-    }
-});
+// function dupArray(arr)
+let set = new Set(dupArray);
+console.log(set)
+// let set = new Set(dupArray);
+let newArray=[...set]
+// dupArray([1, 2, 3, 2, 4,3, 5, 5, 6])
+console.log(newArray)
+// const duplicates = dupArray.filter(item => {
+//     if (set.has(item)) {
+//         set.delete(item);
+//     } else
+//         return item;
+//     }
+// });
 
-console.log(duplicates);
+// console.log(duplicates);
 // **************************3.mergearray and remove duplicates***************************
 function combineArray(array1, array2) {
     return [].concat(array1, array2);
@@ -81,7 +87,7 @@ function stringReverse(str){
        }).join(' ');
     }
    console.log(stringReverse('Welcome to this Javascript Guide!')) 
-// ******************************************append an object to an array***********************
+// ******************************************9.append an object to an array***********************
 function addObject(arr,obj){
     arr=[...arr,age]
     console.log(arr)
@@ -89,3 +95,23 @@ function addObject(arr,obj){
 let names=['riyas','barath']
 let age={age1:22,age2:21}
 addObject(names,age)
+// *********************************************10.armstrong number****************************************
+function Armstrong()
+{
+let flag,number,remainder,addition = 0;
+number = Number(document.getElementById("input").value);
+flag = number;
+while(number > 0){
+	remainder = number%10;
+	addition = addition + remainder*remainder*remainder;
+	number = parseInt(number/10);
+}
+
+if(addition == flag)
+{
+console.log("-The inputed number is Armstrong");
+}
+else{
+console.log("-The inputed number is not Armstrong");
+}
+}
