@@ -1,116 +1,4 @@
-//const team=[
-//     {name:"riyas",age: 30},
-//     {name:"barath",age:20},
-//     {name:"krithiga",age:10},
-//     {name:"aishu",age:100},
-//     {name:"sushmi",age:50},
-    
-// ]
-// console.log("riyas");
-// var a = 10;
-// var b = 20;
-// console.log(a+b);
-// <----------array methods-------->
-// ************************filter*******************
-// const arr = [1,2,3,4,5,6]
-// const arrmap = arr.filter((number)=>{
-//     return number>=4;
-// })
-// console.log(arrmap)
-// // ***********************find*************************
-// const arr1 = [1,2,3,"riyas",5,6]
-// const findnumber = arr1.find((number)=>{
-//     return number === "riyas"
-// })
-// console.log(findnumber)
-// const mark = [{name:"riyas",grade:100}
-// {name:"krithiga",grade:0},
-// {name:"barath",grade:50},
-// {name:"aishu",grade:70},
-// {name:"sushmi",grade:20}
-// ]
-// const mapmark = mark.map((item)=>{
-//     return item.grade
-// })
-// console.log(mapmark)
-// *************************filter**********************
-// const filtermark = mark.filter((item)=>{
-//     return item.grade>50
-// })
-// console.log(filtermark)
-// *************************find**********************
-// const findmark = mark.find((item)=>{
-//     return item.name === "barath"
-// })
-// console.log(findmark)
-// ************************some and every*******************8
-// const somemark = mark.every((item)=>{
-//     return item.grade<=100
-// })
-// console.log(somemark)
-// ******************reduce*****************
-// const totalmark = mark.reduce((initial,item)=>{
-//     return item.grade + initial
-// },0)
-// console.log(totalmark)
-// *************************includes********************
-// console.log(mark.name.includes("riyas"))
 
-// let a=12
-// let b=12
-// let add=((a,b)=>{
-//     return a +b
-    
-//     })
-//     console.log(Iadd()
-// let employee_details={name:"riyas",age:21,gender:"male",role:"developer",education:{
-// sslc:2016,hsc:2018,be:2022
-
-// }}
-// console.log(employee_details)
-// let time=new Date().getDay()
-// console.log(time)
-// let amount=35000;
-// switch(true){
-//     case 
-//         amount>100000:
-//         console.log("buy iphone");
-//         break;
-//     case 
-//         amount>30000:
-//         console.log("buy android phone"); 
-//         break; 
-//     case 
-//         amount>10000:
-//         console.log("buy basic mobile"); 
-//         break; 
-//     case 
-//         amount<5000:
-//         console.log("dont buy mobile")
-//         break;
-//     default:
-//         console.log("invalid input")
-                
-// }
-// let details={
-//     name:"riyas",
-//     age:21
-// }
-// for(let key in details){
-//     console.log("value",key +":",details[key])
-// }
-// function person(name,age){
-//     return {
-//     name:name,
-//     age:age,
-//     details:function(){
-//     let getname_age=`my name is ${this.name} age:${this.age}`
-//     }
-//     }
-//    /* let person1=person("riyas",21) */
-//    }
-//    let person1=person("riyas",21)
-//    console.log(getname_age())
 //    *******************************************************javascript programs******************************************
 // ********************1.sum and product of an array*******************
 let array = [1, 2, 3, 4, 5, 6]
@@ -193,4 +81,11 @@ function stringReverse(str){
        }).join(' ');
     }
    console.log(stringReverse('Welcome to this Javascript Guide!')) 
-    
+// ******************************************append an object to an array***********************
+function addObject(arr,obj){
+    arr=[...arr,age]
+    console.log(arr)
+}
+let names=['riyas','barath']
+let age={age1:22,age2:21}
+addObject(names,age)
