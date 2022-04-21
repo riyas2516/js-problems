@@ -126,3 +126,49 @@ else{
 console.log("-The inputed number is not Armstrong");
 }
 }
+// *********************************11.prime number******************************
+function prime(num){
+    if(num===2){
+        return true;
+    }else if (num>1){
+        for(i=2;i<num;i++){
+            if(num % i !== 0) {              
+                 return true;
+            }else if (num===i*i){
+                return false;
+            }else{
+                return false;
+            }
+        }
+    }else {
+        return false;
+    }
+}
+console.log(prime(144))
+// **********************************12.uppercase a first letter in a string**********************
+function capitalise(word){
+    const capitalized = word.charAt(0).toUpperCase() + word.slice(1);
+    return capitalized;
+}
+console.log(capitalise('riyas'))
+// **********************************14.palindrome or not*********************
+function palindrome(string){
+    let len=string.length;
+    for(i=0;i<len/2;i++){
+    if (string[i] !== string[len - 1 - i]) {
+        return 'not a palindrome';
+    }
+}
+    return 'palindrome'
+}
+
+console.log(palindrome('madam'));
+console.log(palindrome('riyas'));
+
+
+// ********************************15.maximum and minimum element in an array**********************
+
+
+// ********************************
+
+
